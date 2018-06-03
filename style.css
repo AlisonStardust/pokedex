@@ -30,51 +30,63 @@
   position: absolute;
   color: black;
   width: 90vw;
-  margin-top: 200px;
   text-align: center;
-  text-shadow: 0px 0px 20px #CADBC0;
+  text-shadow: 0px 0px 10px #CADBC0;
   animation: glow 1s infinite alternate linear;
 }
 
 @keyframes glow {
   to {
-    text-shadow: 0px 0px 20px #493657;
+    text-shadow: 0px 0px 10px #493657;
   }
 }
 
 .pokedex {
   color: white;
-  width: 90vw;
+  width: 95vw;
   background-color: #FDFFFC;
   margin: auto;
-  padding-top: 300px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: center;
 }
 
+.cardCover:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .cardCover {
   overflow: hidden;
-  color: #493657;
-  background-color: green;
+  padding: 2px;
+  color: #FDFFFC;
+  background-color: rgba(0,23,31,0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  border: 1px solid #00171F;
+  box-shadow: 5px 5px 10px 1px black;
 }
 
 
-@media (min-width: 100px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 780px) {
 
  .pokemonHeader {
     height: 100px;
     font-size: 2em;
  }
 
+  .pokedex {
+    padding-top: 400px;
+  }
+
   .cardCover {
     height: 300px;
-    width: 300px;
-    font-size: 2em;
+    width: 250px;
+    font-size: 1.5em;
+    margin: 20px;
   }
 
   .pokemonIMG {
@@ -83,45 +95,27 @@
   }
 
   .pokemonDescription {
-  font-size: 1em;
+    font-size: 1.6em;
+    margin-top: 200px;
+    margin-bottom: 100px;
   }
 
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 780px) and (max-width: 1100px) {
 
  .pokemonHeader {
     height: 100px;
     font-size: 2em;
  }
 
-  .cardCover {
-    height: 300px;
-    width: 300px;
-    font-size: 2em;
+  .pokedex {
+    padding-top: 400px;
   }
-
-  .pokemonIMG {
-    width: 100px;
-    height: 100px;
-  }
-
-  .pokemonDescription {
-  font-size: 1em;
-  }
-
-}
-
-@media (min-width: 1200px) {
- 
- .pokemonHeader {
-    height: 100px;
-    font-size: 2em;
- }
 
   .cardCover {
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: 250px;
     font-size: 2em;
     margin: 20px;
   }
@@ -132,7 +126,40 @@
   }
 
   .pokemonDescription {
-  font-size: 2em;
+    font-size: 1.8em;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+}
+
+@media (min-width: 1100px) {
+ 
+ .pokemonHeader {
+    height: 100px;
+    font-size: 2em;
+ }
+
+  .pokedex {
+    padding-top: 400px;
+  }
+
+  .cardCover {
+    height: 350px;
+    width: 250px;
+    font-size: 1.8em;
+    margin: 20px;
+  }
+
+  .pokemonIMG {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pokemonDescription {
+    font-size: 2em;
+    margin-top: 200px;
+    margin-bottom: 100px;
   }
 
 }
