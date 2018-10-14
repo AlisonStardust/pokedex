@@ -26,7 +26,16 @@
   border: 1px solid black;
 }
 
+.pokemonHeader::first-letter { 
+  color: #F71735;
+}
+
+.pokemonDescription::first-letter { 
+  color: #F71735;
+}
+
 .pokemonDescription {
+  padding: 10px;
   position: absolute;
   color: black;
   width: 90vw;
@@ -37,7 +46,7 @@
 
 @keyframes glow {
   to {
-    text-shadow: 0px 0px 10px #493657;
+    text-shadow: 0px 10px 50px #493657;
   }
 }
 
@@ -58,18 +67,22 @@
 }
 
 .cardCover {
+  margin: auto;
   overflow: hidden;
   padding: 2px;
   color: #FDFFFC;
-  background-color: rgba(0,23,31,0.7);
+  background-color: #38AECC;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  border: 1px solid #00171F;
-  box-shadow: 5px 5px 10px 1px black;
+  border: 1px solid #022F40;
+  box-shadow: 5px 5px 10px 1px #022F40;
 }
 
+.pokemonCardDescription {
+  text-align: center;
+}
 
 @media (min-width: 100px) and (max-width: 780px) {
 
